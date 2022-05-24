@@ -15,3 +15,19 @@ L’écran nos circuits devra être une liste d’image avec un titre à chaque 
 Au clic sur un circuit, cela doit faire apparaitre un autre écran avec la ou les photos et la description correspondante à cette dernière.
 
 Le maquettage de l’application mobile devra être réalisé en amont
+
+-----
+
+npm install react-native-paper
+
+>     module.exports = function(api) {
+>       api.cache(true);
+>       return {
+>         presets: ['babel-preset-expo'],
+>         env: {
+>           production: {
+>             plugins: ['react-native-paper/babel'],
+>           },
+>         },
+>       };
+>     };

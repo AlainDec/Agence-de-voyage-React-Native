@@ -3,7 +3,7 @@ import { Image } from 'react-native';
 import styles from './styles';
 
 const Logo = (props:any) => {
-    let sizeLogo = props.size === 'tall' ? styles.imgBigLogo : styles.imgSmallLogo;
+    let sizeLogo:any = props.size === 'tall' ? styles.imgBigLogo : styles.imgSmallLogo;
     return (
         <Image 
             source={require('../assets/logo.png')}

@@ -4,8 +4,7 @@ import styles from './styles';
 import Logo from './Logo';
 import CircuitsScrolling from './CircuitsScrolling';
 
-
-const Home = () => {
+const Home: React.FC = ():JSX.Element => {
     return (
         <View style={styles.containerView}>
             <ScrollView>

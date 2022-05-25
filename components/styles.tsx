@@ -2,7 +2,7 @@ import { StyleSheet } from 'react-native';
 
 {/* https://ethercreative.github.io/react-native-shadow-generator/ */}
 
-const styles = StyleSheet.create({
+const styles:any = StyleSheet.create({
     containerSafe: {
       flex: 1,
       backgroundColor: '#fff',

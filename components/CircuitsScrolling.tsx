@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, Image, ScrollView, TouchableOpacity  } from 'react-native';
+import { Text, View, Image, ScrollView, TouchableOpacity } from 'react-native';
 import styles from './styles';
 import data from '../data/circuits.js';
 
@@ -19,12 +19,10 @@ const CircuitsScrolling: React.FC = ():JSX.Element => {
                             <View 
                                 style={styles.circuitCard}
                                 >
-                                
-                                
-                                    <Image 
-                                        source={value.img}
-                                        style={styles.circuitCardImg} />
-                                
+                                <Image 
+                                    source={value.img}
+                                    style={styles.circuitCardImg} />
+                               
                                 <View style={styles.circuitCardContent}>
                                     <View style={styles.circuitCardContentLeft}>
                                         <Text style={styles.txtCircuitLocation}>{value.location}</Text>

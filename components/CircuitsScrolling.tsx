@@ -1,28 +1,29 @@
 import React from 'react';
 import { Text, View, Image, ScrollView, TouchableOpacity } from 'react-native';
 import styles from './styles';
-import data from '../data/circuits.js';
+import data from '../data/circuits';
+import { CircuitScrollingProps } from '../types/types';
 
-const link = () => {
-    console.log("test lien");
-}
+const CircuitsScrolling: React.FC<CircuitScrollingProps> = ({ route, navigation }: CircuitScrollingProps):JSX.Element => {
 
-const CircuitsScrolling: React.FC = ():JSX.Element => {
     return (
         <>
             <Text style={styles.txtTitleRubric}>Les circuits Worldfly</Text>
             <ScrollView style={styles.circuitContainer} horizontal={true}>
-                {
-                    data.map( (value: any) => {
-                        return (
-                            <TouchableOpacity  onPress={() => link()} key={value.id}>
+            {
+                data.map( (value: any, index: number) => {
+                    return (
+                        <TouchableOpacity
+                            onPress={() => navigation.navigate('CircuitItem', {itemCircuitId: index})}
+                            key={value.id}
+                        >
                             <View 
                                 style={styles.circuitCard}
                                 >
                                 <Image 
                                     source={value.img}
                                     style={styles.circuitCardImg} />
-                               
+                            
                                 <View style={styles.circuitCardContent}>
                                     <View style={styles.circuitCardContentLeft}>
                                         <Text style={styles.txtCircuitLocation}>{value.location}</Text>
@@ -35,10 +36,10 @@ const CircuitsScrolling: React.FC = ():JSX.Element => {
                                     </View>
                                 </View>
                             </View>
-                            </TouchableOpacity >
-                        )
-                    })
-                }
+                        </TouchableOpacity >
+                    )
+                })
+            }
             </ScrollView>
         </>
     );

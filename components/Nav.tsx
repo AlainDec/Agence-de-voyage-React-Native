@@ -37,37 +37,4 @@ const Nav = () => {
 
 export default Nav;
 
-
-const styles = StyleSheet.create({
-    scrollview: {
-      padding: 10,
-    },
-    titleH1: {
-      fontSize: 28,
-      fontWeight: 'bold',
-    },
-    textDate: {
-      color: '#999',
-      fontSize: 16,
-    },
-    textBlockTitle: {
-      fontSize: 20,
-      fontWeight: 'bold',
-    },
-    text13: {
-      fontSize: 13,
-    },
-    text11: {
-      fontSize: 11,
-    },
-    surface: {
-      padding: 6,
-      height: 60,
-      width: 60,
-      alignItems: 'center',
-      justifyContent: 'center',
-      elevation: 4,
-      backgroundColor: '#ccc'
-    },
-  });
   

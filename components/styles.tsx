@@ -32,6 +32,18 @@ const styles:any = StyleSheet.create({
       height: 300,
       resizeMode: 'cover',
     },
+    imgCircuitBgContainer: {
+      flex: 1,
+      flexDirection: 'row',
+      flexWrap: 'wrap',
+    },
+    imgCircuitBg: {
+      width:'100%',
+      height: 100,
+      resizeMode: 'cover',
+      borderColor: 'white',
+      borderWidth: 1,
+    },
     circuitContainer: {
       marginHorizontal: 20,
       flexDirection: 'row',
@@ -96,9 +108,31 @@ const styles:any = StyleSheet.create({
       color: '#02ADE5',
       textAlign: 'right',
     },
+    circuitBannerAbsoluteView: {
+      flex: 1,
+      flexDirection: 'column-reverse',
+    },
+    circuitTxtAbsoluteView: {
+      height: 20,
+      backgroundColor: 'white',
+      opacity: 0.7,
+      paddingLeft: 5,
+      fontSize: 10,
+    },
+    circuitTxtAbsoluteView2: {
+      height: 15,
+      backgroundColor: 'white',
+      opacity: 0.7,
+      paddingLeft: 5,
+      fontSize: 8,
+    },
     txtCircuitDuration: {
       fontSize: 10,
       color: '#858585',
+    },
+    textMargin: {
+      marginHorizontal: 20,
+      marginVertical: 10,
     }
   });
 

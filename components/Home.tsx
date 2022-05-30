@@ -4,11 +4,11 @@ import { StyleSheet } from 'react-native';
 import Logo from './Logo';
 import CircuitsScrolling from './CircuitsScrolling';
 import HomeSubFooter from './HomeSubFooter';
-import { CircuitScrollingProps, ServicesProps,RootStackParamList } from '../types/types';
+import { CircuitScrollingProps, ServicesProps } from '../types/types';
 import { useNavigation, useRoute } from '@react-navigation/native';
 
-type ServicesRoute = ServicesProps['route']
 type ServiceNavigation = ServicesProps['navigation']
+type ServicesRoute = ServicesProps['route']
 
 const Home: React.FC<CircuitScrollingProps> = ({ route, navigation }: CircuitScrollingProps):JSX.Element => {
     const nav = useNavigation<ServiceNavigation>()

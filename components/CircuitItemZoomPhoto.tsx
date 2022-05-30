@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { Text, View, Image, ScrollView, TouchableOpacity, ImageBackground, StyleSheet } from 'react-native';
 import Logo from './Logo';
-import { IData, IGalery } from '../interfaces/interfaces';
 import { CircuitScrollingPhotoProps } from '../types/types';
 
 const CircuitItemZoomPhoto: React.FC<CircuitScrollingPhotoProps> = ({ navigation, route }: CircuitScrollingPhotoProps): JSX.Element => {

@@ -5,10 +5,8 @@ import { IData, IGalery } from '../interfaces/interfaces';
 
 type RootStackParamList = {
     Home: undefined;
-    CircuitItem: { itemCircuit: any };
-    CircuitItemZoomPhoto: {
-        itemPhoto: IGalery,
-    };
+    CircuitItem: { itemCircuit: IData };
+    CircuitItemZoomPhoto: { itemPhoto: IGalery };
     Services: undefined;
     Contact: undefined;
 };
@@ -18,4 +16,4 @@ type CircuitScrollingPhotoProps = NativeStackScreenProps<RootStackParamList, 'Ci
 type ServicesProps = NativeStackScreenProps<RootStackParamList, 'Services'>;
 type ContactProps = NativeStackScreenProps<RootStackParamList, 'Contact'>;
 
-export { CircuitScrollingProps, CircuitScrollingPhotoProps, ServicesProps, ContactProps, RootStackParamList };
+export { CircuitScrollingProps, CircuitScrollingPhotoProps, ServicesProps, ContactProps };

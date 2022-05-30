@@ -2,6 +2,7 @@ import React from 'react';
 import { Text, View, Image, ScrollView, TouchableOpacity } from 'react-native';
 import { StyleSheet } from 'react-native';
 import data from '../data/circuits';
+import { IData } from '../interfaces/interfaces';
 import { CircuitScrollingProps } from '../types/types';
 
 const CircuitsScrolling: React.FC<CircuitScrollingProps> = ({ route, navigation }: CircuitScrollingProps):JSX.Element => {
@@ -11,7 +12,7 @@ const CircuitsScrolling: React.FC<CircuitScrollingProps> = ({ route, navigation 
             <Text style={styles.txtTitleRubric}>Les circuits Worldfly</Text>
             <ScrollView style={styles.circuitContainer} horizontal={true}>
             {
-                data.map( (value: any, index: number) => {
+                data.map( (value: IData, index: number) => {
                     return (
                         <TouchableOpacity
                             onPress={() => navigation.navigate('CircuitItem', {itemCircuit: value})}

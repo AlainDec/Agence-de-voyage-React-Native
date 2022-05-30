@@ -19,9 +19,6 @@ const BigImage = ({ dataItem, navigation }: any) => (
 );
 
 const SmallImage = ({ dataGalery, navigation }: any) => {
-    console.log("-------- SmallImage --------");
-    console.log("dataGalery = " + dataGalery);
-    console.log("dataGalery.id = " + dataGalery.id);
     return (
         <TouchableOpacity
             onPress={() => navigation.navigate('CircuitItemZoomPhoto', { itemPhoto: dataGalery })}

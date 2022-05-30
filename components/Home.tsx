@@ -1,17 +1,25 @@
 import { StatusBar } from 'expo-status-bar';
-import { Text, View, ScrollView, Image } from 'react-native';
-import styles from './styles';
+import { View, ScrollView, Image } from 'react-native';
+import { StyleSheet } from 'react-native';
 import Logo from './Logo';
 import CircuitsScrolling from './CircuitsScrolling';
-import { CircuitScrollingProps } from '../types/types';
+import HomeSubFooter from './HomeSubFooter';
+import { CircuitScrollingProps, ServicesProps,RootStackParamList } from '../types/types';
+import { useNavigation, useRoute } from '@react-navigation/native';
+
+type ServicesRoute = ServicesProps['route']
+type ServiceNavigation = ServicesProps['navigation']
 
 const Home: React.FC<CircuitScrollingProps> = ({ route, navigation }: CircuitScrollingProps):JSX.Element => {
+    const nav = useNavigation<ServiceNavigation>()
+    const rte = useRoute<ServicesRoute>()
     return (
         <View style={styles.containerView}>
             <ScrollView>
-                <Logo size='tall' />
+                <Logo size='tall' direction='center' />
                 <Image source={require('../assets/video-accueil.png')} style={styles.imgHomeBackground} />
                 <CircuitsScrolling route={route} navigation={navigation} />
+                <HomeSubFooter navigation={nav} route={rte} />
             </ScrollView>
             
             <StatusBar style="auto" />
@@ -20,3 +28,16 @@ const Home: React.FC<CircuitScrollingProps> = ({ route, navigation }: CircuitScr
 }
 
 export default Home;
+
+const styles = StyleSheet.create({
+    containerView: {
+      marginTop: 40,
+      width: '100%',
+      backgroundColor: '#ffffff',
+    },
+    imgHomeBackground: {
+      width: '100%',
+      height: 300,
+      resizeMode: 'cover',
+    },
+});

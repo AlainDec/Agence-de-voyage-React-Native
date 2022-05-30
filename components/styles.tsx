@@ -133,7 +133,17 @@ const styles:any = StyleSheet.create({
     textMargin: {
       marginHorizontal: 20,
       marginVertical: 10,
-    }
+    },
+    txtH2: {
+      marginVertical: 10,
+      fontSize: 18,
+      color: '#02ADE5',
+    },
+    txtH3: {
+      fontSize: 14,
+      marginBottom: 10,
+      color: '#02ADE5',
+    },
   });
 
   export default styles;

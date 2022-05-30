@@ -1,11 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
-import { View, ScrollView, Image } from 'react-native';
-import { StyleSheet } from 'react-native';
-import Logo from './Logo';
-import CircuitsScrolling from './CircuitsScrolling';
-import HomeSubFooter from './HomeSubFooter';
-import { CircuitScrollingProps, ServicesProps } from '../types/types';
+import { View, ScrollView, Image, StyleSheet } from 'react-native';
 import { useNavigation, useRoute } from '@react-navigation/native';
+import Logo from '../components/Logo';
+import CircuitsScrolling from '../components/CircuitsScrolling';
+import HomeSubFooter from '../components/HomeSubFooter';
+import { CircuitScrollingProps, ServicesProps } from '../types/types';
 
 type ServiceNavigation = ServicesProps['navigation']
 type ServicesRoute = ServicesProps['route']

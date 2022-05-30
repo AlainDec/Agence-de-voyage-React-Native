@@ -1,7 +1,8 @@
 import { Text, View, StyleSheet, Button, Image, ScrollView, TextInput } from 'react-native';
-import Logo from './Logo';
+import Logo from '../components/Logo';
+import colors from '../themes/colors';
 
-const Contact = () => {
+const Services = () => {
     return (
         <View style={styles.containerView}>
             <ScrollView>
@@ -89,7 +90,7 @@ const Contact = () => {
     )
 }
 
-export default Contact;
+export default Services;
 
 const styles = StyleSheet.create({
     imgHomeBackground: {
@@ -98,7 +99,7 @@ const styles = StyleSheet.create({
         resizeMode: 'cover',
     },
     containerView: {
-      marginTop: 40,
+      /* marginTop: 40, */
       width: '100%',
       backgroundColor: '#ffffff',
     },
@@ -121,18 +122,18 @@ const styles = StyleSheet.create({
     txtH2: {
         marginVertical: 10,
         fontSize: 18,
-        color: '#02ADE5',
+        color: colors.primary,
     },
     txtH3: {
         fontSize: 14,
         marginBottom: 10,
-        color: '#4B4B4B',
+        color: colors.titleInput,
     },
     txtH3Bold: {
         fontSize: 16,
         fontWeight: 'bold',
         marginBottom: 10,
-        color: '#4B4B4B',
+        color: colors.titleInput,
     },
     form: {
         flexDirection: 'row',
@@ -141,7 +142,7 @@ const styles = StyleSheet.create({
         flex: 1,
         paddingHorizontal: 10,
         borderWidth: 1,
-        borderColor: '#4B4B4B',
+        borderColor: colors.input,
         fontSize: 12,
     }
 });

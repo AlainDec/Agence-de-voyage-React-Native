@@ -1,7 +1,8 @@
 import * as React from 'react';
 import { Text, View, Image, ScrollView, TouchableOpacity, ImageBackground, StyleSheet } from 'react-native';
-import Logo from './Logo';
+import Logo from '../components/Logo';
 import { CircuitScrollingPhotoProps } from '../types/types';
+import colors from '../themes/colors';
 
 const CircuitItemZoomPhoto: React.FC<CircuitScrollingPhotoProps> = ({ navigation, route }: CircuitScrollingPhotoProps): JSX.Element => {
 
@@ -34,7 +35,7 @@ const styles = StyleSheet.create({
         resizeMode: 'cover',
     },
     containerView: {
-      marginTop: 40,
+      /* marginTop: 40, */
       width: '100%',
       backgroundColor: '#ffffff',
     },
@@ -52,11 +53,11 @@ const styles = StyleSheet.create({
     txtH2: {
         marginVertical: 10,
         fontSize: 18,
-        color: '#02ADE5',
+        color: colors.primary,
     },
     txtH3: {
         fontSize: 14,
         marginBottom: 10,
-        color: '#02ADE5',
+        color: colors.primary,
     },
 });

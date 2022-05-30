@@ -1,6 +1,7 @@
 import { Text, View, StyleSheet, Button, Image } from 'react-native';
 import { ServicesProps, ContactProps } from '../types/types';
 import { useNavigation, useRoute } from '@react-navigation/native';
+import colors from '../themes/colors';
 
 type ContactRoute = ContactProps['route']
 type ContactNavigation = ContactProps['navigation']
@@ -59,21 +60,21 @@ const styles = StyleSheet.create({
     TxtQuestion: {
         marginBottom: 5,
         fontSize: 16,
-        color: '#4B4B4B'
+        color: colors.titleInput
     },
     TxtServices: {
         marginBottom: 5,
         fontSize: 12,
-        color: '#4B4B4B'
+        color: colors.titleInput
     },
     TxtExpert: {
         marginTop: 20,
         fontSize: 14,
-        color: '#4B4B4B'
+        color: colors.titleInput
     },
     TxtHoraires: {
         fontSize: 10,
-        color: '#4B4B4B'
+        color: colors.titleInput,
     },
     containerTelephone: {
         flexDirection: 'row',

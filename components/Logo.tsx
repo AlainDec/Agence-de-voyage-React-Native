@@ -1,12 +1,9 @@
 import React from 'react';
 import { Image, StyleSheet } from 'react-native';
+import { ILogoParams } from '../interfaces/interfaces';
 
-interface Result {
-    size: 'tall' | 'small',
-    direction: 'left' | 'center'
-}
-
-const Logo = (props: Result) => {
+// Affiche le logo différemment selon les pages qui l'utilise
+const Logo = (props: ILogoParams) => {
     const sizeLogo:Object = props.size === 'tall' ? styles.imgBigLogo : styles.imgSmallLogo;
     const directionLogo:Object = props.direction === 'left' ? styles.imgLeftLogo : styles.imgCenterLogo;
 

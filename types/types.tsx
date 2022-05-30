@@ -16,4 +16,4 @@ type CircuitScrollingPhotoProps = NativeStackScreenProps<RootStackParamList, 'Ci
 type ServicesProps = NativeStackScreenProps<RootStackParamList, 'Services'>;
 type ContactProps = NativeStackScreenProps<RootStackParamList, 'Contact'>;
 
-export { CircuitScrollingProps, CircuitScrollingPhotoProps, ServicesProps, ContactProps };
+export { CircuitScrollingProps, CircuitScrollingPhotoProps, ServicesProps, ContactProps, RootStackParamList };

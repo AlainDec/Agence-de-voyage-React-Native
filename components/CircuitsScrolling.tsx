@@ -1,9 +1,9 @@
 import React from 'react';
-import { Text, View, Image, ScrollView, TouchableOpacity } from 'react-native';
-import { StyleSheet } from 'react-native';
+import { Text, View, Image, ScrollView, TouchableOpacity, StyleSheet } from 'react-native';
 import data from '../data/circuits';
 import { IData } from '../interfaces/interfaces';
 import { CircuitScrollingProps } from '../types/types';
+import colors from '../themes/colors';
 
 const CircuitsScrolling: React.FC<CircuitScrollingProps> = ({ route, navigation }: CircuitScrollingProps):JSX.Element => {
 
@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
       },
       circuitContainer: {
-        marginHorizontal: 20,
+        paddingLeft: 20,
         flexDirection: 'row',
       },
       circuitCard: {
@@ -91,11 +91,11 @@ const styles = StyleSheet.create({
       txtCircuitLocation: {
         fontSize: 10,
         fontWeight: 'bold',
-        color: '#02ADE5',
+        color: colors.primary,
       },
       txtCircuitName: {
         fontSize: 14,
-        color: '#858585',
+        color: colors.secondary,
       },
       circuitCardContentRight: {
         width: '30%',
@@ -104,17 +104,17 @@ const styles = StyleSheet.create({
       },
       txtCircuitDuration: {
         fontSize: 10,
-        color: '#858585',
+        color: colors.secondary,
       },
       circuitCardTxtFrom: {
         fontSize: 9,
-        color: '#858585',
+        color: colors.secondary,
         textAlign: 'right',
       },
       circuitCardTxtPrice: {
         fontSize: 18,
         fontWeight: 'bold',
-        color: '#02ADE5',
+        color: colors.primary,
         textAlign: 'right',
       },
 });

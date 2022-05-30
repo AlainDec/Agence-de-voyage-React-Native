@@ -17,3 +17,8 @@ export interface IGalery {
     name: string,
     resume: string,
 }
+
+export interface ILogoParams {
+    size: 'tall' | 'small',
+    direction: 'left' | 'center'
+}

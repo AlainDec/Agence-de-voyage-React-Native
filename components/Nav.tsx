@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import { StyleSheet } from 'react-native';
 import { BottomNavigation, Text } from 'react-native-paper';
-import Home from '../components/Home';
-import CircuitItem from '../components/CircuitItem';
+import Home from '../screens/Home';
+import CircuitItem from '../screens/CircuitItem';
 
 const HomeRoute = () => <Home />;
 const HistoryRoute = () => <CircuitItem />;

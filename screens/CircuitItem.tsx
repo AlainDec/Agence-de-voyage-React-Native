@@ -6,16 +6,13 @@ import { CircuitScrollingProps } from '../types/types';
 import colors from '../themes/colors';
 
 const BigImage = ({ dataItem, navigation }: any) => (
-    <TouchableOpacity
-        onPress={() => navigation.navigate('CircuitItemZoomPhoto', { CircuitItemZoomPhoto: dataItem.index })}
-        style={{ width: '100%', height: 300 }}
-    >
+
         <ImageBackground source={dataItem?.galery[0]?.img} style={styles.imgHomeBackground}>
             <View style={styles.circuitBannerAbsoluteView}>
                 <Text style={styles.circuitTxtAbsoluteView}>{dataItem?.galery[0]?.name}</Text>
             </View>
         </ImageBackground>
-    </TouchableOpacity>
+
 );
 
 const SmallImage = ({ dataGalery, navigation }: any) => {

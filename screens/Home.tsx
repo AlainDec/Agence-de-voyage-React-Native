@@ -9,7 +9,7 @@ import { CircuitScrollingProps, ServicesProps } from '../types/types';
 type ServiceNavigation = ServicesProps['navigation']
 type ServicesRoute = ServicesProps['route']
 
-const Home: React.FC<CircuitScrollingProps> = ({ route, navigation }: CircuitScrollingProps):JSX.Element => {
+const Home: React.FC<CircuitScrollingProps> = ({ route, navigation }: CircuitScrollingProps): JSX.Element => {
     const nav = useNavigation<ServiceNavigation>()
     const rte = useRoute<ServicesRoute>()
     return (
@@ -20,7 +20,7 @@ const Home: React.FC<CircuitScrollingProps> = ({ route, navigation }: CircuitScr
                 <CircuitsScrolling route={route} navigation={navigation} />
                 <HomeSubFooter navigation={nav} route={rte} />
             </ScrollView>
-            
+
             <StatusBar style="auto" />
         </View>
     );
@@ -30,13 +30,13 @@ export default Home;
 
 const styles = StyleSheet.create({
     containerView: {
-      marginTop: 40,
-      width: '100%',
-      backgroundColor: '#ffffff',
+        marginTop: 40,
+        width: '100%',
+        backgroundColor: '#ffffff',
     },
     imgHomeBackground: {
-      width: '100%',
-      height: 300,
-      resizeMode: 'cover',
+        width: '100%',
+        height: 300,
+        resizeMode: 'cover',
     },
 });

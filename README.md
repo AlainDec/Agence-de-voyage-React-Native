@@ -54,6 +54,7 @@ Création design perso avec Figma puis résultats sous React Native/Expo
 <img src="https://user-images.githubusercontent.com/35977024/187668463-8754fd0f-eb44-4f3e-9714-5a5bd2f38399.jpg" width="150" align="left">
 
 \
-\
+<pre>
+</pre>
 
 https://user-images.githubusercontent.com/35977024/187674097-616b1989-9124-4856-b202-5dfd66f26cab.mp4

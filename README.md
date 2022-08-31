@@ -47,6 +47,6 @@ Choisir une icône : https://ionic.io/ionicons
 ---
 
 <img src="https://user-images.githubusercontent.com/35977024/187668463-8754fd0f-eb44-4f3e-9714-5a5bd2f38399.jpg" width="150" align="left">
-<img src="https://user-images.githubusercontent.com/35977024/187668466-6a3a1f04-600c-4801-a359-1750f00c01b1.jpg" width="150">
-<img src="https://user-images.githubusercontent.com/35977024/187668467-fb5a3b9f-b213-4cda-9d13-cd571a663d5b.jpg" width="150">
-<img src="https://user-images.githubusercontent.com/35977024/187668470-685c4572-c98f-4974-b1a9-9945f8d4f6bd.jpg" width="150">
+<img src="https://user-images.githubusercontent.com/35977024/187668466-6a3a1f04-600c-4801-a359-1750f00c01b1.jpg" width="150" align="left">
+<img src="https://user-images.githubusercontent.com/35977024/187668467-fb5a3b9f-b213-4cda-9d13-cd571a663d5b.jpg" width="150" align="left">
+<img src="https://user-images.githubusercontent.com/35977024/187668470-685c4572-c98f-4974-b1a9-9945f8d4f6bd.jpg" width="150" align="left">

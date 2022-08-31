@@ -46,7 +46,7 @@ Choisir une icône : https://ionic.io/ionicons
 
 ---
 
-![Screenshot_20220831-132111_Expo Go](https://user-images.githubusercontent.com/35977024/187667900-15f092e3-f6a3-4bd5-b41f-5cdde2590900.jpg)
+![Screenshot_20220831-132111_Expo Go](https://user-images.githubusercontent.com/35977024/187667900-15f092e3-f6a3-4bd5-b41f-5cdde2590900.jpg | width=100)
 ![Screenshot_20220831-132008_Expo Go](https://user-images.githubusercontent.com/35977024/187667904-fc0a30aa-13a7-4ad3-b4f6-bc500d3b25f7.jpg)
 ![Screenshot_20220831-132130_Expo Go](https://user-images.githubusercontent.com/35977024/187667906-bfdd4b02-3491-47a0-abab-d091661249ef.jpg)
 ![Screenshot_20220831-132120_Expo Go](https://user-images.githubusercontent.com/35977024/187667907-a4d76ade-471e-4ff5-a085-3e987bcee3ab.jpg)

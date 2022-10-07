@@ -18,7 +18,7 @@ export default function App() {
       <Stack.Navigator
         initialRouteName="Home"
         >
-        {/* <Header /> */}
+        {/* <Header /> -*/}
         <Stack.Screen name="Home" options={{
           headerShown: false
         }} component={Home} />
